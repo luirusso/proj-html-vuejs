@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container pb-5 position-relative">
+        <div class="container white pb-5 position-relative">
             <div
                 class="d-flex pb-4 justify-content-space-between align-items-center"
             >
@@ -28,16 +28,22 @@
                 </div>
             </div>
         </div>
+
+        <div class="container_divider">
+            <SectionDivider />
+        </div>
     </main>
 </template>
 
 <script>
 import Card from "./Card.vue";
+import SectionDivider from "./SectionDivider.vue";
 
 export default {
     name: "Main",
     components: {
         Card,
+        SectionDivider,
     },
 
     data() {
@@ -79,8 +85,7 @@ hr {
     overflow: hidden;
 }
 
-.container {
-    background-color: white;
+.container.white {
     box-shadow: 0px 0px 7px 0px #0000002e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
     padding: 2rem 2rem;
     top: -70px;
