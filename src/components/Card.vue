@@ -1,9 +1,9 @@
 <template>
-    <div class="px-3">
-        <div class="pb-3">
-            <img :src="require(`../assets/${card_image}`)" alt="" />
+    <div class="width-100 px-2">
+        <div class="width-100 pb-3">
+            <img class="width-100" :src="require(`../assets/${card_image}`)" alt="" />
         </div>
-        <div class="fs-4">{{ card_title }}</div>
+        <div class="title-font fs-4 pb-1">{{ card_title }}</div>
         <div class="d-flex justify-content-center">
             <div>{{ card_author }}</div>
             <div class="px-1">|</div>

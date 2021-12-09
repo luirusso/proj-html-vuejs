@@ -10,26 +10,9 @@
                 </div>
                 <hr />
             </div>
-            <div class="site_card d-flex text-center justify-content-center">
+            <div class="row site_card d-flex text-center justify-content-center">
                 <!-- CARD -->
-                <!-- <div>
-                    <div class="pb-3">
-                        <img
-                            src="../assets/single-post-img3-400x263.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="fs-4">
-                        Food Corner: Top Japanese Restaurants for Sushi
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <div>By admin</div>
-                        <div>|</div>
-                        <div>March 25th, 2019</div>
-                    </div>
-                </div> -->
-
-                <div
+                <div class="card-site col-4"
                     v-for="(element, index) in foodieJournalArray"
                     :key="`foodieJournal-${index}`"
                 >
@@ -87,6 +70,10 @@ export default {
 @import "../styles/globals.scss";
 hr {
     width: calc(100% / 3);
+}
+
+.card-site {
+  overflow: hidden;
 }
 
 .container {
