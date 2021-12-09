@@ -1,44 +1,47 @@
 <template>
     <header>
-        <div class="container d-flex justify-content-between">
-            <ul class="nav">
+        <div class="py-3 container d-flex justify-content-between">
+            <ul class="nav topnav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                        >Active</a
-                    >
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link download" aria-current="page" href="#"
+                            >Download App</a
+                        >
+                        <span class="button_site"> iOS </span>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#">Advertise with us</a>
                 </li>
             </ul>
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                        >Active</a
-                    >
+                    <a class="nav-link" href="#"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link" href="#"
+                        ><i class="fab fa-youtube"></i
+                    ></a>
                 </li>
             </ul>
         </div>
 
-        <div class="container d-flex justify-content-center">
+        <div class="container pb-4 d-flex justify-content-center">
             <div>
                 <a href="#">
-                    <img src="../assets/avada-food-logo.png" alt="">
+                    <img src="../assets/avada-food-logo.png" alt="" />
                 </a>
             </div>
         </div>
@@ -47,25 +50,25 @@
             <nav>
                 <ul class="d-flex justify-content-center">
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                     <li>
-                        PROVA
+                        <a href="#">PROVA</a>
                     </li>
                 </ul>
             </nav>
@@ -85,10 +88,27 @@ export default {
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
-    li {
-        padding: 0 2rem;
+.topnav {
+    font-size: 11px;
+    color: $silverChalice;
+    .download {
+        padding-right: 5px;
+    }
+    .button_site {
+        font-size: 8px;
+        background-color: #fc7525;
+        padding: 2px 5px;
+        color: white;
+        border-radius: 3px;
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        li {
+            padding: 0 2rem;
+        }
     }
 }
 </style>
