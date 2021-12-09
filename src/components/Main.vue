@@ -8,7 +8,7 @@
                 </div>
                 <hr />
             </div>
-            <div>
+            <div class="site_card text-center">
                 <!-- CARD -->
                 <div>
                     <div>
@@ -17,8 +17,8 @@
                             alt=""
                         />
                     </div>
-                    <div>Food Corner: Top Japanese Restaurants for Sushi</div>
-                    <div class="d-flex">
+                    <div class="fs-4">Food Corner: Top Japanese Restaurants for Sushi</div>
+                    <div class="d-flex justify-content-center">
                         <div>By admin</div>
                         <div>|</div>
                         <div>March 25th, 2019</div>
@@ -49,5 +49,9 @@ hr {
     box-shadow: 0px 0px 7px 0px #4e4e4e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
     padding: 2rem 3rem;
     top: -70px;
+}
+
+.site_card {
+  width: calc(100% / 3);
 }
 </style>
