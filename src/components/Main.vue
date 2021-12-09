@@ -10,9 +10,12 @@
                 </div>
                 <hr />
             </div>
-            <div class="row site_card d-flex text-center justify-content-center">
+            <div
+                class="row site_card d-flex text-center justify-content-center"
+            >
                 <!-- CARD -->
-                <div class="card-site col-4"
+                <div
+                    class="card-site col-4"
                     v-for="(element, index) in foodieJournalArray"
                     :key="`foodieJournal-${index}`"
                 >
@@ -34,7 +37,7 @@ import Card from "./Card.vue";
 export default {
     name: "Main",
     components: {
-      Card
+        Card,
     },
 
     data() {
@@ -73,14 +76,13 @@ hr {
 }
 
 .card-site {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .container {
     background-color: white;
-    box-shadow: 0px 0px 7px 0px #4e4e4e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
-    padding: 2rem 3rem;
+    box-shadow: 0px 0px 7px 0px #0000002e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
+    padding: 2rem 2rem;
     top: -70px;
 }
-
 </style>

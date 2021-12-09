@@ -4,16 +4,16 @@
     >
         <div class="container_small text-center d-flex flex-column">
             <div>
-                <div class="jumbo-title fs-1 position-relative">
+                <div class="jumbo-title box-shadow fs-1 position-relative">
                     <div>
-                        <span class="today button_site fs-6 fw-bold position-absolute">
+                        <span class="box-shadow today button_site fs-6 fw-bold position-absolute">
                             TODAY'S PICK
                         </span>
                     </div>
                     <div class="title-font pb-1">
                         Food Corner: Top Japanese Restaurants for Sushi
                     </div>
-                    <div class="fs-5">March 25, 2019</div>
+                    <div class="fs-5 title-font date">March 25, 2019</div>
                 </div>
             </div>
         </div>
@@ -41,9 +41,14 @@ export default {
     background: white;
     border-radius: 10px;
     padding: 3rem 4rem;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000,
-        5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.today {
+    letter-spacing: 1px;
+}
+
+.date {
+    color: $small-text-color;
 }
 
 .button_site {
@@ -52,9 +57,5 @@ export default {
     transform: translate(-50%);
     border-radius: 10px;
     padding: 8px 30px;
-}
-
-.today {
-    box-shadow: 0px 0px 7px 0px #4e4e4e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
 }
 </style>
