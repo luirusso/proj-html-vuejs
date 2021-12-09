@@ -10,7 +10,7 @@
                             TODAY'S PICK
                         </span>
                     </div>
-                    <div class="pb-1">
+                    <div class="jumbo-main-title pb-1">
                         Food Corner: Top Japanese Restaurants for Sushi
                     </div>
                     <div class="fs-5">March 25, 2019</div>
@@ -44,6 +44,10 @@ export default {
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
         5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.jumbo-main-title {
+    font-family: 'Vidaloka', serif;
 }
 
 .button_site {
