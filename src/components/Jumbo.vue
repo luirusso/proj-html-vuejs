@@ -39,8 +39,8 @@ export default {
 
 .jumbo-title {
     background: white;
-    border-radius: 20px;
-    padding: 2rem 4rem;
+    border-radius: 10px;
+    padding: 3rem 4rem;
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
         5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);

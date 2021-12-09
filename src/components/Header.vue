@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="py-3 container d-flex justify-content-between">
+        <div class="py-2 container d-flex justify-content-between">
             <ul class="nav topnav">
                 <li class="nav-item">
                     <div class="d-flex align-items-center">
@@ -41,7 +41,7 @@
             </ul>
         </div>
 
-        <div class="container pb-4 d-flex justify-content-center">
+        <div class="container pb-5 d-flex justify-content-center">
             <div>
                 <a href="#">
                     <img src="../assets/avada-food-logo.png" alt="" />
