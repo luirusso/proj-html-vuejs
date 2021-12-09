@@ -4,7 +4,10 @@
             <ul class="nav topnav">
                 <li class="nav-item">
                     <div class="d-flex align-items-center">
-                        <a class="nav-link download" aria-current="page" href="#"
+                        <a
+                            class="nav-link download"
+                            aria-current="page"
+                            href="#"
                             >Download App</a
                         >
                         <span class="button_site"> iOS </span>
@@ -50,25 +53,25 @@
             <nav>
                 <ul class="d-flex justify-content-center">
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">Recipes</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">Places</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">Blog</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#">Contacts</a>
                     </li>
                     <li>
-                        <a href="#">PROVA</a>
+                        <a href="#"><i class="fas fa-search"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -83,23 +86,44 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.container_small {
-    width: 700px;
-    margin: 0 auto;
-}
+@import "../styles/globals.scss";
 
 .topnav {
     font-size: 11px;
-    color: $silverChalice;
+    color: $small-text-color;
     .download {
         padding-right: 5px;
     }
     .button_site {
         font-size: 8px;
-        background-color: #fc7525;
         padding: 2px 5px;
         color: white;
         border-radius: 3px;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    color: $small-text-color;
+}
+
+.container_small {
+    nav {
+        ul {
+            li {
+                padding-bottom: 5px;
+                border-bottom: 3px solid transparent;
+                &:hover {
+                    border-bottom: 3px solid $primary-color;
+                }
+                a {
+                    color: $title-text-color;
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -107,7 +131,7 @@ nav {
     ul {
         list-style: none;
         li {
-            padding: 0 2rem;
+            margin: 0 2rem;
         }
     }
 }

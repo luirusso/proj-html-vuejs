@@ -1,13 +1,25 @@
 // COLORS
 
-$orange: #fc7525;
-$springWood: #f6f7f1;
-$silverChalice: #afafaf;
+$primary-color: #fc7525;
+$page-background: #f6f7f1;
+$small-text-color: #6a6b6c;;
+$primary-text-color: #6a6b6c;
+$title-text-color: #262628;
+
+// GLOBALS
+
+a {
+    text-decoration: none;
+}
 
 // UTILITES
+.container_small {
+    width: 700px;
+    margin: 0 auto;
+}
 
 .button_site {
-    background-color: $orange;
+    background-color: $primary-color;
     padding: 5px 10px;
     color: white;
     border-radius: 5px;
