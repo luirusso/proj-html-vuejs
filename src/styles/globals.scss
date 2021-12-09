@@ -8,6 +8,10 @@ $title-text-color: #262628;
 
 // GLOBALS
 
+html body {
+    background-color: $page-background;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,4 +27,8 @@ a {
     padding: 5px 10px;
     color: white;
     border-radius: 5px;
+}
+
+.title_spacing {
+    letter-spacing: 5px;
 }

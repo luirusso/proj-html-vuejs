@@ -6,7 +6,7 @@
             <div>
                 <div class="jumbo-title fs-1 position-relative">
                     <div>
-                        <span class="today button_site fs-5 position-absolute">
+                        <span class="today button_site fs-6 fw-bold position-absolute">
                             TODAY'S PICK
                         </span>
                     </div>
