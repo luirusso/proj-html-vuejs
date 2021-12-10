@@ -30,7 +30,10 @@
         </div>
 
         <div class="container_divider pb-4">
-            <SectionDivider />
+            <SectionDivider
+                :title="`POPULAR RECIPES`"
+                :text="`Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.`"
+            />
         </div>
 
         <div class="container pb-5">
@@ -106,13 +109,17 @@
             </div>
         </div>
 
-        <div class="container_divider pt-4">
-            <SectionDivider />
+        <div class="container_divider pt-4 pb-3">
+            <SectionDivider
+                :title="`CULINARY COLLECTION`"
+                :text="`Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.`"
+            />
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="culinary-card col-3 mb-5"
+        <div class="container pb-5">
+            <div class="row pb-5">
+                <div
+                    class="culinary-card col-3 mb-5"
                     v-for="(collection, index) in culinaryCollectionArray"
                     :key="`culinary-${index}`"
                 >
