@@ -41,7 +41,7 @@
             </ul>
         </div>
 
-        <div class="container pb-5 d-flex justify-content-center">
+        <div class="container pb-4 d-flex justify-content-center">
             <div>
                 <a href="#">
                     <img src="../assets/avada-food-logo.png" alt="" />

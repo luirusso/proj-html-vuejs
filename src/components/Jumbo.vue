@@ -6,7 +6,9 @@
             <div>
                 <div class="jumbo-title box-shadow fs-1 position-relative">
                     <div>
-                        <span class="box-shadow today button_site fs-6 fw-bold position-absolute">
+                        <span
+                            class="box-shadow today button_site fs-6 fw-bold position-absolute"
+                        >
                             TODAY'S PICK
                         </span>
                     </div>

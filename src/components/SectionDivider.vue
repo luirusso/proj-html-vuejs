@@ -1,6 +1,6 @@
 <template>
     <section class="text-center pb-5">
-        <h4 class="pt-5 pb-5">POPULAR RECIPES</h4>
+        <h5 class="pt-5 pb-4 fw-600">POPULAR RECIPES</h5>
 
         <div class="fs-6">
             Aliquam erat volutpat. Ut quis ligula a magna blandit finibus.
@@ -15,4 +15,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+h5 {
+    letter-spacing: 2px;
+}
+</style>

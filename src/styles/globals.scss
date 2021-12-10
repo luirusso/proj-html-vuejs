@@ -2,7 +2,7 @@
 
 $primary-color: #fc7525;
 $page-background: #f6f7f1;
-$small-text-color: #6a6b6c;;
+$small-text-color: #6a6b6c;
 $primary-text-color: #6a6b6c;
 $title-text-color: #262628;
 
@@ -10,7 +10,7 @@ $title-text-color: #262628;
 
 html body {
     background-color: $page-background;
-    font-family: 'Catamaran', sans-serif;
+    font-family: "Catamaran", sans-serif;
 }
 
 a {
@@ -36,7 +36,11 @@ a {
 }
 
 .title-font {
-    font-family: 'Vidaloka', serif;
+    font-family: "Vidaloka", serif;
+}
+
+.fw-600 {
+    font-weight: 600;
 }
 
 .title_spacing {

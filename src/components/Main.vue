@@ -6,7 +6,7 @@
             >
                 <hr />
                 <div class="title_spacing flex-grow-1 text-center">
-                    <div class="fs-4">FOODIE JOURNAL</div>
+                    <div class="fs-5 fw-600">FOODIE JOURNAL</div>
                 </div>
                 <hr />
             </div>
@@ -31,6 +31,63 @@
 
         <div class="container_divider">
             <SectionDivider />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 white">
+                    <div class="w-100">
+                        <img
+                            class="w-100"
+                            src="../assets/Yogurt-Nan-600x395.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="px-4 py-5">
+                        <div>
+                            <h5>Lunch Favourite with Salad, Naan And Beans</h5>
+                            <div>
+                                Bakery, Featured, Healthy, Latest Recipes, Staff
+                                Picks
+                            </div>
+                        </div>
+                        <hr class="w-100" />
+                        <p>
+                            Suspendisse at semper odio. Nam fringilla
+                            scelerisque tincidunt. Orci varius natoque penatibus
+                            et magnis dis parturient montes, nascetur ridiculus
+                            mus. Donec tincidunt posuere ornare. Phasellus
+                            placerat odio non feugiat sollicitudin. Integer
+                            vitae elementum ex. Sed porttitor, diam eget
+                            convallis volutpat, arcu tellus facilis nulla, id
+                            dignissim orci leo id.
+                        </p>
+                        <button>LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div v-for="(popular, index) in popularFoodArray" :key="`popular-${index}`" class="col-6">
+                            <!-- POPULAR FOOD CARDS -->
+                            <div class="popular-food-card">
+                                <div>
+                                    <i class="fas fa-link"></i>
+                                </div>
+                                <div>
+                                    Fruit Platter with Banana, Mango, Berries
+                                    and Orange
+                                </div>
+                                <div>
+                                    <img
+                                        src="../assets/Mixed-fruits-400x263.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </template>
@@ -68,6 +125,52 @@ export default {
                     card_title: "Why These Toasts with Tea are My New Favorite",
                     card_author: "By admin",
                     card_date: "March 25th, 2019",
+                },
+            ],
+            popularFoodArray: [
+                {
+                    popularImage: "Mixed-fruits-400x263.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage:
+                        "r-rachel-park-366508-unsplash-min-400x263.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage:
+                        "r-michelle-tsang-500721-unsplash-min-400x263.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage: "quick-summer-drink-460x295.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage:
+                        "r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage: "perfect-cosmopolitan-460x295.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage: "fi2x-6-460x295.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
+                },
+                {
+                    popularImage:
+                        "r-brooke-lark-96398-unsplash-min-460x295.jpg",
+                    popularTitle:
+                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
             ],
         };
