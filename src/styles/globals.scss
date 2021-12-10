@@ -35,6 +35,14 @@ a {
     border-radius: 5px;
 }
 
+.text-glow {
+    transition: color 0.4s ease-in-out;
+    &:hover {
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
+
 .title-font {
     font-family: "Vidaloka", serif;
 }

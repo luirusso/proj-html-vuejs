@@ -38,7 +38,7 @@
 
         <div class="container pb-5">
             <div class="row">
-                <div class="col-6 white">
+                <div class="col-6 white p-0 box-shadow">
                     <div class="w-100 position-relative">
                         <HoverLink />
                         <img
@@ -49,7 +49,7 @@
                     </div>
                     <div class="px-5 py-4">
                         <div>
-                            <h4 class="title-font">
+                            <h4 class="title-font text-glow">
                                 Lunch Favourite with Salad, Naan And Beans
                             </h4>
                             <div class="pb-1">
@@ -82,7 +82,7 @@
                         >
                             <!-- POPULAR FOOD CARDS -->
                             <div
-                                class="popular-food-card overflow-hidden w-100"
+                                class="popular-food-card overflow-hidden w-100 box-shadow"
                             >
                                 <!-- <div class="hover-link">
                                     <div>

@@ -8,7 +8,7 @@
                 alt=""
             />
         </div>
-        <div class="title-font fs-4 pb-1">{{ card_title }}</div>
+        <div class="title-font text-glow fs-4 pb-1">{{ card_title }}</div>
         <div class="d-flex justify-content-center">
             <div>{{ card_author }}</div>
             <div class="px-1">|</div>

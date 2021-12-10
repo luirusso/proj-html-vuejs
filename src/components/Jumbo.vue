@@ -12,7 +12,7 @@
                             TODAY'S PICK
                         </span>
                     </div>
-                    <div class="title-font pb-1">
+                    <div class="title-font pb-1 text-glow">
                         Food Corner: Top Japanese Restaurants for Sushi
                     </div>
                     <div class="fs-5 title-font date">March 25, 2019</div>
