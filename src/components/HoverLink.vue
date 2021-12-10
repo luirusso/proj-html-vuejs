@@ -1,10 +1,12 @@
 <template>
-    <div class="hover-link d-flex flex-column align-content-center justify-content-center text-center py-4 px-5">
+    <div
+        class="hover-link title-font fs-5 d-flex flex-column align-content-center justify-content-center text-center py-3 px-5"
+    >
         <div class="d-flex justify-content-center pb-2">
             <div
                 class="link-icon d-flex align-items-center justify-content-center"
             >
-                <i class="fas fa-link"></i>
+                <i class="fas fs-6 fa-link"></i>
             </div>
         </div>
         <div>Fruit Platter with Banana, Mango, Berries and Orange</div>
@@ -21,7 +23,12 @@ export default {
 .hover-link {
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 68, 0, 0.644);
+    background: rgb(251, 78, 35);
+    background: linear-gradient(
+        180deg,
+        rgba(251, 78, 35, 0.7875525210084033) 0%,
+        rgba(251, 96, 35, 1) 100%
+    );
     color: white;
     position: absolute;
     opacity: 0;
