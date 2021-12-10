@@ -110,13 +110,27 @@
             <SectionDivider />
         </div>
 
+        <div class="container">
+            <div class="row">
+                <div class="culinary-card col-3 mb-5"
+                    v-for="(collection, index) in culinaryCollectionArray"
+                    :key="`culinary-${index}`"
+                >
+                    <CulinaryCollections
+                        :image="collection.image"
+                        :button="collection.button"
+                    />
+                </div>
+            </div>
+        </div>
     </main>
 </template>
 
 <script>
 import Card from "./Card.vue";
 import SectionDivider from "./SectionDivider.vue";
-import HoverLink from './HoverLink.vue'
+import HoverLink from "./HoverLink.vue";
+import CulinaryCollections from "./CulinaryCollections.vue";
 
 export default {
     name: "Main",
@@ -124,6 +138,7 @@ export default {
         Card,
         SectionDivider,
         HoverLink,
+        CulinaryCollections,
     },
 
     data() {
@@ -178,6 +193,40 @@ export default {
                 {
                     popularImage:
                         "r-brooke-lark-96398-unsplash-min-460x295.jpg",
+                },
+            ],
+            culinaryCollectionArray: [
+                {
+                    image: "drinks-recipes.png",
+                    button: "DRINKS",
+                },
+                {
+                    image: "soups-recipes.png",
+                    button: "SOUPS",
+                },
+                {
+                    image: "baking-recipes.png",
+                    button: "BAKERY",
+                },
+                {
+                    image: "dinner-recipes.png",
+                    button: "DINNER",
+                },
+                {
+                    image: "healthy-recipes.png",
+                    button: "HEALTHY",
+                },
+                {
+                    image: "staff-picks.png",
+                    button: "STAFF PICKS",
+                },
+                {
+                    image: "premium-recipes.png",
+                    button: "APPETISERS",
+                },
+                {
+                    image: "quick-easy-recipes.png",
+                    button: "QUICK & EASY",
                 },
             ],
         };
