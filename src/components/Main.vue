@@ -29,11 +29,11 @@
             </div>
         </div>
 
-        <div class="container_divider">
+        <div class="container_divider pb-4">
             <SectionDivider />
         </div>
 
-        <div class="container">
+        <div class="container pb-5">
             <div class="row">
                 <div class="col-6 white">
                     <div class="w-100">
@@ -43,16 +43,20 @@
                             alt=""
                         />
                     </div>
-                    <div class="px-4 py-5">
+                    <div class="px-5 py-4">
                         <div>
-                            <h5>Lunch Favourite with Salad, Naan And Beans</h5>
-                            <div>
+                            <h4 class="title-font">
+                                Lunch Favourite with Salad, Naan And Beans
+                            </h4>
+                            <div class="pb-1">
                                 Bakery, Featured, Healthy, Latest Recipes, Staff
                                 Picks
                             </div>
                         </div>
-                        <hr class="w-100" />
-                        <p>
+                        <div class="pb-1">
+                            <hr class="w-100" />
+                        </div>
+                        <p class="pb-3 fs-6">
                             Suspendisse at semper odio. Nam fringilla
                             scelerisque tincidunt. Orci varius natoque penatibus
                             et magnis dis parturient montes, nascetur ridiculus
@@ -62,24 +66,34 @@
                             convallis volutpat, arcu tellus facilis nulla, id
                             dignissim orci leo id.
                         </p>
-                        <button>LEARN MORE</button>
+                        <span class="button_site">LEARN MORE</span>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div v-for="(popular, index) in popularFoodArray" :key="`popular-${index}`" class="col-6">
+                        <div
+                            v-for="(popular, index) in popularFoodArray"
+                            :key="`popular-${index}`"
+                            class="col-6 pb-4 pe-2"
+                        >
                             <!-- POPULAR FOOD CARDS -->
-                            <div class="popular-food-card">
-                                <div>
-                                    <i class="fas fa-link"></i>
-                                </div>
-                                <div>
-                                    Fruit Platter with Banana, Mango, Berries
-                                    and Orange
-                                </div>
+                            <div
+                                class="popular-food-card overflow-hidden w-100"
+                            >
+                                <!-- <div class="hover-link">
+                                    <div>
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <div>
+                                        Fruit Platter with Banana, Mango,
+                                        Berries and Orange
+                                    </div>
+                                </div> -->
                                 <div>
                                     <img
-                                        src="../assets/Mixed-fruits-400x263.jpg"
+                                        :src="
+                                            require(`../assets/${popular.popularImage}`)
+                                        "
                                         alt=""
                                     />
                                 </div>
@@ -88,6 +102,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="container_divider py-5">
+            <SectionDivider />
+        </div>
+
+        <div class="container">
+
         </div>
     </main>
 </template>
@@ -192,5 +214,13 @@ hr {
     box-shadow: 0px 0px 7px 0px #0000002e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
     padding: 2rem 2rem;
     top: -70px;
+}
+
+.popular-food-card {
+    max-height: 177px;
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
 }
 </style>
