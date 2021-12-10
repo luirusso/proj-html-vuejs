@@ -36,7 +36,8 @@
         <div class="container pb-5">
             <div class="row">
                 <div class="col-6 white">
-                    <div class="w-100">
+                    <div class="w-100 position-relative">
+                        <HoverLink />
                         <img
                             class="w-100"
                             src="../assets/Yogurt-Nan-600x395.jpg"
@@ -89,7 +90,8 @@
                                         Berries and Orange
                                     </div>
                                 </div> -->
-                                <div>
+                                <div class="position-relative">
+                                    <HoverLink />
                                     <img
                                         :src="
                                             require(`../assets/${popular.popularImage}`)
@@ -104,25 +106,24 @@
             </div>
         </div>
 
-        <div class="container_divider py-5">
+        <div class="container_divider pt-4">
             <SectionDivider />
         </div>
 
-        <div class="container">
-
-        </div>
     </main>
 </template>
 
 <script>
 import Card from "./Card.vue";
 import SectionDivider from "./SectionDivider.vue";
+import HoverLink from './HoverLink.vue'
 
 export default {
     name: "Main",
     components: {
         Card,
         SectionDivider,
+        HoverLink,
     },
 
     data() {
@@ -152,47 +153,31 @@ export default {
             popularFoodArray: [
                 {
                     popularImage: "Mixed-fruits-400x263.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage:
                         "r-rachel-park-366508-unsplash-min-400x263.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage:
                         "r-michelle-tsang-500721-unsplash-min-400x263.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage: "quick-summer-drink-460x295.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage:
                         "r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage: "perfect-cosmopolitan-460x295.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage: "fi2x-6-460x295.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
                 {
                     popularImage:
                         "r-brooke-lark-96398-unsplash-min-460x295.jpg",
-                    popularTitle:
-                        "Fruit Platter with Banana, Mango, Berries and Orange",
                 },
             ],
         };
