@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container white pb-5 position-relative">
+        <div class="container white pb-4 position-relative">
             <div
                 class="d-flex pb-4 justify-content-space-between align-items-center"
             >
@@ -15,7 +15,7 @@
             >
                 <!-- CARD -->
                 <div
-                    class="card-site col-4"
+                    class="card-site col-4 px-4"
                     v-for="(element, index) in foodieJournalArray"
                     :key="`foodieJournal-${index}`"
                 >
@@ -236,15 +236,15 @@
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col-7">
                     <div class="row">
                         <div
-                            class="col-6"
+                            class="col-6 my-2 px-3"
                             v-for="(recipe, index) in randomRecipesArray"
                             :key="`random-recipe-${index}`"
                         >
-                            <Card
+                            <Card class="text-center box-shadow white mb-4"
                                 :card_image="recipe.card_image"
                                 :card_title="recipe.card_title"
                                 :card_author="recipe.card_author"

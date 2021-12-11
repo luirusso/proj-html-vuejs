@@ -1,5 +1,5 @@
 <template>
-    <div class="width-100 px-2">
+    <div class="width-100">
         <div class="width-100 mb-3 position-relative">
             <HoverLink />
             <img
@@ -8,17 +8,19 @@
                 alt=""
             />
         </div>
-        <div class="title-font text-glow fs-4 pb-1">{{ card_title }}</div>
-        <div class="d-flex justify-content-center">
-            <div>{{ card_author }}</div>
-            <div class="px-1">|</div>
-            <div>{{ card_date }}</div>
+        <div class="px-4 pb-4">
+            <div class="title-font text-glow fs-4 pb-1">{{ card_title }}</div>
+            <div class="d-flex justify-content-center">
+                <div>{{ card_author }}</div>
+                <div class="px-1">|</div>
+                <div>{{ card_date }}</div>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-import HoverLink from './HoverLink.vue'
+import HoverLink from "./HoverLink.vue";
 
 export default {
     name: "Card",
