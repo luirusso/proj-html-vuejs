@@ -73,7 +73,7 @@
                             convallis volutpat, arcu tellus facilis nulla, id
                             dignissim orci leo id.
                         </p>
-                        <span class="button_site">LEARN MORE</span>
+                        <span class="button_site_square">LEARN MORE</span>
                     </div>
                 </div>
                 <div class="col-6">
@@ -145,7 +145,7 @@
                     />
                 </div>
                 <div>
-                    <div class="button_site">
+                    <div class="button_site_square">
                         READ OUR BLOG
                         <span><i class="fas fa-book-reader"></i></span>
                     </div>
@@ -187,17 +187,34 @@
                             convallis volutpat, arcu tellus facilis nulla, id
                             dignissim orci leo id.
                         </p>
-                        <span class="button_site">LEARN MORE</span>
+                        <span class="button_site_square">LEARN MORE</span>
                     </div>
                 </div>
                 <div class="col-4">
                     <div
-                        class="latest-recipes-banner d-flex align-items-center justify-content-center"
+                        class="latest-recipes-banner d-flex align-items-center justify-content-center mb-5"
                     >
                         <div class="w-25 h-25 d-flex">
                             <span class="fs-4 text-center">
                                 VIEW OUR LATEST RECIPES
                             </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="singapore-guide">
+                                <div>
+                                    <div class="guide-text fs-3">
+                                        City Guide: Singapore
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button_site_square text-center">
+                                <span>
+                                    <i class="fas fa-globe-americas"></i>
+                                    VIEW ALL CITY GUIDES
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,5 +361,25 @@ hr {
     background-repeat: no-repeat;
     height: 480px;
     background-position: right;
+}
+
+.singapore-guide {
+    background-image: url(../assets/singapore-featured-image-400x263.jpg);
+    background-size: cover;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    color: white;
+    .guide-text {
+        background-color: rgba(0, 0, 0, 0.705);
+        height: 50px;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Catamaran, Arial, Helvetica, sans-serif;
+    }
 }
 </style>

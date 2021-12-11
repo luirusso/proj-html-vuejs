@@ -33,6 +33,18 @@ a {
     padding: 5px 10px;
     color: white;
     border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.button_site_square {
+    background-color: $primary-color;
+    padding: 5px 10px;
+    color: white;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .text-glow {
