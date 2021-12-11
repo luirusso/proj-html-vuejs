@@ -39,7 +39,9 @@
 
         <div class="container pb-5">
             <div class="row justify-content-between">
-                <div class="col-6 big_card white width-45 p-0 box-shadow">
+                <div
+                    class="col-6 big_card white h-75 width-45 p-0 pb-4 box-shadow"
+                >
                     <div class="w-100 position-relative">
                         <HoverLink />
                         <img
@@ -59,7 +61,7 @@
                             </div>
                         </div>
                         <div class="pb-1">
-                            <hr class="w-100" />
+                            <hr class="w-100 my-3" />
                         </div>
                         <p class="pb-3 fs-6">
                             Suspendisse at semper odio. Nam fringilla
@@ -79,7 +81,7 @@
                         <div
                             v-for="(popular, index) in popularFoodArray"
                             :key="`popular-${index}`"
-                            class="col-6 pb-4 pe-2"
+                            class="col-6 pb-5 pe-2"
                         >
                             <!-- POPULAR FOOD CARDS -->
                             <div
@@ -110,7 +112,7 @@
             </div>
         </div>
 
-        <div class="container_divider pt-4 pb-3">
+        <div class="container_divider pt-5 pb-3">
             <SectionDivider
                 class="text-center"
                 :title="`CULINARY COLLECTION`"
@@ -119,9 +121,9 @@
         </div>
 
         <div class="container pb-5">
-            <div class="row justify-content-between pb-5">
+            <div class="row pb-5">
                 <div
-                    class="culinary-card col-3 mb-5"
+                    class="culinary-card d-flex justify-content-center align-items-center col-3 mb-5"
                     v-for="(collection, index) in culinaryCollectionArray"
                     :key="`culinary-${index}`"
                 >
@@ -153,19 +155,19 @@
 
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-8 big_card white p-0 box-shadow">
+                <div class="col-7 big_card white p-0 box-shadow">
                     <div class="w-100 position-relative">
                         <HoverLink />
                         <img
                             class="w-100"
-                            src="../assets/Yogurt-Nan-600x395.jpg"
+                            src="../assets/single-post-img3-800x527.jpg"
                             alt=""
                         />
                     </div>
                     <div class="px-5 py-4">
                         <div>
                             <h4 class="title-font text-glow">
-                                Lunch Favourite with Salad, Naan And Beans
+                                Food Corner: Top Japanese Restaurants for Sushi
                             </h4>
                             <div class="pb-1">
                                 Bakery, Featured, Healthy, Latest Recipes, Staff
@@ -189,7 +191,15 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="latest-recipes-banner"></div>
+                    <div
+                        class="latest-recipes-banner d-flex align-items-center justify-content-center"
+                    >
+                        <div class="w-25 h-25 d-flex">
+                            <span class="fs-4 text-center">
+                                VIEW OUR LATEST RECIPES
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -330,9 +340,9 @@ hr {
 
 .latest-recipes-banner {
     background-image: url(/img/ad-bg.e0bca1ff.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 421px;
+    height: 480px;
     background-position: right;
 }
 </style>
