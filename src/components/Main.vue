@@ -81,7 +81,7 @@
                         <div
                             v-for="(popular, index) in popularFoodArray"
                             :key="`popular-${index}`"
-                            class="col-6 pb-5 pe-2"
+                            class="col-6 pb-3 pe-2"
                         >
                             <!-- POPULAR FOOD CARDS -->
                             <div
@@ -155,44 +155,54 @@
 
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-7 big_card white p-0 box-shadow">
-                    <div class="w-100 position-relative">
-                        <HoverLink />
-                        <img
-                            class="w-100"
-                            src="../assets/single-post-img3-800x527.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="px-5 py-4">
-                        <div>
-                            <h4 class="title-font text-glow">
-                                Food Corner: Top Japanese Restaurants for Sushi
-                            </h4>
+                <div class="col-7">
+                    <div class="big_card white p-0 pb-4 mb-5 box-shadow">
+                        <div class="w-100 position-relative">
+                            <HoverLink />
+                            <img
+                                class="w-100"
+                                src="../assets/single-post-img3-800x527.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="px-5 py-4">
+                            <div>
+                                <h4 class="title-font text-glow">
+                                    Food Corner: Top Japanese Restaurants for
+                                    Sushi
+                                </h4>
+                                <div class="pb-1">
+                                    Bakery, Featured, Healthy, Latest Recipes,
+                                    Staff Picks
+                                </div>
+                            </div>
                             <div class="pb-1">
-                                Bakery, Featured, Healthy, Latest Recipes, Staff
-                                Picks
+                                <hr class="w-100" />
+                            </div>
+                            <p class="pb-3 fs-6">
+                                Suspendisse at semper odio. Nam fringilla
+                                scelerisque tincidunt. Orci varius natoque
+                                penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus. Donec tincidunt posuere
+                                ornare. Phasellus placerat odio non feugiat
+                                sollicitudin. Integer vitae elementum ex. Sed
+                                porttitor, diam eget convallis volutpat, arcu
+                                tellus facilis nulla, id dignissim orci leo id.
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div class="text-glow">Read more ></div>
+                                <div class="text-glow">
+                                    <i class="far pe-1 fa-comments"></i>
+                                    <span>0</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="pb-1">
-                            <hr class="w-100" />
-                        </div>
-                        <p class="pb-3 fs-6">
-                            Suspendisse at semper odio. Nam fringilla
-                            scelerisque tincidunt. Orci varius natoque penatibus
-                            et magnis dis parturient montes, nascetur ridiculus
-                            mus. Donec tincidunt posuere ornare. Phasellus
-                            placerat odio non feugiat sollicitudin. Integer
-                            vitae elementum ex. Sed porttitor, diam eget
-                            convallis volutpat, arcu tellus facilis nulla, id
-                            dignissim orci leo id.
-                        </p>
-                        <span class="button_site_square">LEARN MORE</span>
                     </div>
                 </div>
+
                 <div class="col-4">
                     <div
-                        class="latest-recipes-banner d-flex align-items-center justify-content-center mb-5"
+                        class="latest-recipes-banner d-flex align-items-center justify-content-center mb-5 cursor-pointer"
                     >
                         <div class="w-25 h-25 d-flex">
                             <span class="fs-4 text-center">
@@ -202,7 +212,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <div class="singapore-guide">
+                            <div class="singapore-guide cursor-pointer">
                                 <div>
                                     <div class="guide-text fs-3">
                                         City Guide: Singapore
@@ -214,6 +224,47 @@
                                     <i class="fas fa-globe-americas"></i>
                                     VIEW ALL CITY GUIDES
                                 </span>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <hr class="w-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="row">
+                        <div
+                            class="col-6"
+                            v-for="(recipe, index) in randomRecipesArray"
+                            :key="`random-recipe-${index}`"
+                        >
+                            <Card
+                                :card_image="recipe.card_image"
+                                :card_title="recipe.card_title"
+                                :card_author="recipe.card_author"
+                                :card_date="recipe.card_date"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="search_icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <input
+                                    class="searchbar w-100"
+                                    placeholder="Search..."
+                                    type="search"
+                                />
                             </div>
                         </div>
                     </div>
@@ -326,6 +377,46 @@ export default {
                     button: "QUICK & EASY",
                 },
             ],
+            randomRecipesArray: [
+                {
+                    card_image: "fi-roundup-400x263.jpg",
+                    card_title:
+                        "Roundup: My New Favourite Recipes For Healty Living",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+                {
+                    card_image: "fi-korean-food-400x263.jpg",
+                    card_title: "Meal Prep: Korean Bibimbap with Kimchi",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+                {
+                    card_image: "fi-toasts-400x263.jpg",
+                    card_title: "Why These Toasts with Tea are My New Favorite",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+                {
+                    card_image: "fi-street-food-400x263.jpg",
+                    card_title: "Exploring Street Food in Bangkok",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+                {
+                    card_image: "fi-organic-breakfast-400x263.jpg",
+                    card_title: "Organic Choices For Healthier Living",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+                {
+                    card_image: "fi-water-side-rest-400x263.jpg",
+                    card_title:
+                        "5 Waterside Restaurants in Istanbul for Special Events",
+                    card_author: "By admin",
+                    card_date: "March 25th, 2019",
+                },
+            ],
         };
     },
 };
@@ -381,5 +472,31 @@ hr {
         justify-content: center;
         font-family: Catamaran, Arial, Helvetica, sans-serif;
     }
+}
+
+.searchbar {
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 60px;
+    padding: 5px;
+}
+
+.search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 95px;
+    color: #d4d6d7;
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 </style>

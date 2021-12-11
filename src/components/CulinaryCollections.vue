@@ -33,7 +33,7 @@ img {
     width: 60%;
     transition: transform 0.7s ease-in-out;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         cursor: pointer;
     }
 }

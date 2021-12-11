@@ -47,6 +47,10 @@ a {
     }
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .text-glow {
     transition: color 0.4s ease-in-out;
     &:hover {
