@@ -1,11 +1,11 @@
 <template>
     <header>
         <div class="py-2 container d-flex justify-content-between">
-            <ul class="nav topnav">
+            <ul class="nav topnav pt-2">
                 <li class="nav-item">
                     <div class="d-flex align-items-center">
                         <a
-                            class="nav-link download"
+                            class="nav-link text-glow download"
                             aria-current="page"
                             href="#"
                             >Download App</a
@@ -14,10 +14,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Advertise with us</a>
+                    <a class="nav-link text-glow" href="#">Advertise with us</a>
                 </li>
             </ul>
-            <ul class="nav">
+            <ul class="nav pt-2">
                 <li class="nav-item">
                     <a class="nav-link" href="#"
                         ><i class="fab fa-facebook-f"></i
@@ -89,7 +89,7 @@ export default {
 @import "../styles/globals.scss";
 
 .topnav {
-    font-size: 11px;
+    font-size: 15px;
     color: $small-text-color;
     .download {
         padding-right: 5px;

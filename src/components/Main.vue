@@ -31,14 +31,15 @@
 
         <div class="container_divider pb-4">
             <SectionDivider
+                class="text-center"
                 :title="`POPULAR RECIPES`"
                 :text="`Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.`"
             />
         </div>
 
         <div class="container pb-5">
-            <div class="row">
-                <div class="col-6 white p-0 box-shadow">
+            <div class="row justify-content-between">
+                <div class="col-6 big_card white width-45 p-0 box-shadow">
                     <div class="w-100 position-relative">
                         <HoverLink />
                         <img
@@ -111,13 +112,14 @@
 
         <div class="container_divider pt-4 pb-3">
             <SectionDivider
+                class="text-center"
                 :title="`CULINARY COLLECTION`"
                 :text="`Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.`"
             />
         </div>
 
         <div class="container pb-5">
-            <div class="row pb-5">
+            <div class="row justify-content-between pb-5">
                 <div
                     class="culinary-card col-3 mb-5"
                     v-for="(collection, index) in culinaryCollectionArray"
@@ -127,6 +129,67 @@
                         :image="collection.image"
                         :button="collection.button"
                     />
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-4">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="text-start">
+                    <SectionDivider
+                        class="text-start w-75"
+                        :title="`FARM TO TABLE`"
+                        :text="`Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.`"
+                    />
+                </div>
+                <div>
+                    <div class="button_site">
+                        READ OUR BLOG
+                        <span><i class="fas fa-book-reader"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-8 big_card white p-0 box-shadow">
+                    <div class="w-100 position-relative">
+                        <HoverLink />
+                        <img
+                            class="w-100"
+                            src="../assets/Yogurt-Nan-600x395.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="px-5 py-4">
+                        <div>
+                            <h4 class="title-font text-glow">
+                                Lunch Favourite with Salad, Naan And Beans
+                            </h4>
+                            <div class="pb-1">
+                                Bakery, Featured, Healthy, Latest Recipes, Staff
+                                Picks
+                            </div>
+                        </div>
+                        <div class="pb-1">
+                            <hr class="w-100" />
+                        </div>
+                        <p class="pb-3 fs-6">
+                            Suspendisse at semper odio. Nam fringilla
+                            scelerisque tincidunt. Orci varius natoque penatibus
+                            et magnis dis parturient montes, nascetur ridiculus
+                            mus. Donec tincidunt posuere ornare. Phasellus
+                            placerat odio non feugiat sollicitudin. Integer
+                            vitae elementum ex. Sed porttitor, diam eget
+                            convallis volutpat, arcu tellus facilis nulla, id
+                            dignissim orci leo id.
+                        </p>
+                        <span class="button_site">LEARN MORE</span>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="latest-recipes-banner"></div>
                 </div>
             </div>
         </div>
@@ -263,5 +326,13 @@ hr {
         object-fit: cover;
         width: 100%;
     }
+}
+
+.latest-recipes-banner {
+    background-image: url(/img/ad-bg.e0bca1ff.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 421px;
+    background-position: right;
 }
 </style>

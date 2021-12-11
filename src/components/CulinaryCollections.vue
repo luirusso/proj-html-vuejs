@@ -1,5 +1,5 @@
 <template>
-    <div class="white width-90 box-shadow">
+    <div class="white w-100 box-shadow">
         <div class="p-1">
             <div class="d-flex justify-content-center align-items-center">
                 <div class="d-flex justify-content-center pt-1">
