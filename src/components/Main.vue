@@ -299,17 +299,21 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        v-for="(post, index) in postsWidgetArray"
-                        :key="`post-${index}`"
-                        class="col-12"
-                    >
-                        <PostsWidget
-                            :image="post.image"
-                            :title="post.title"
-                            :date="post.date"
-                        />
+                    <div class="pb-5">
+                        <div
+                            v-for="(post, index) in postsWidgetArray"
+                            :key="`post-${index}`"
+                            class="col-12"
+                        >
+                            <PostsWidget
+                                :image="post.image"
+                                :title="post.title"
+                                :date="post.date"
+                            />
+                        </div>
                     </div>
+
+                    <TweetsWidget />
                 </div>
             </div>
         </div>
@@ -322,6 +326,7 @@ import SectionDivider from "./SectionDivider.vue";
 import HoverLink from "./HoverLink.vue";
 import CulinaryCollections from "./CulinaryCollections.vue";
 import PostsWidget from "./PostsWidget.vue";
+import TweetsWidget from "./TweetsWidget.vue"
 
 export default {
     name: "Main",
@@ -331,6 +336,7 @@ export default {
         HoverLink,
         CulinaryCollections,
         PostsWidget,
+        TweetsWidget,
     },
 
     data() {
