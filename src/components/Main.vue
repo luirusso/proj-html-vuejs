@@ -315,8 +315,39 @@
 
                     <TweetsWidget />
                 </div>
+
+                <div class="col-7 pb-7rem">
+                    <div class="load-button text-center fs-5 fw-bold py-3 box-shadow cursor-pointer">
+                        LOAD MORE POSTS
+                    </div>
+                </div>
             </div>
         </div>
+
+        <section>
+            <EbookSubscribe />
+        </section>
+
+        <section class="pb-5">
+            <div class="row p-0 m-0">
+                <div class="col-3 p-0 m-0 position-relative">
+                    <HoverLink />
+                    <img class="w-100" src="../assets/Yogurt-Nan-600x395.jpg" alt="">
+                </div>
+                <div class="col-3 p-0 m-0 position-relative">
+                    <HoverLink />
+                    <img class="w-100" src="../assets/Mixed-fruits-600x395.jpg" alt="">
+                </div>
+                <div class="col-3 p-0 m-0 position-relative">
+                    <HoverLink />
+                    <img class="w-100" src="../assets/r-rachel-park-366508-unsplash-min-600x395.jpg" alt="">
+                </div>
+                <div class="col-3 p-0 m-0 position-relative">
+                    <HoverLink />
+                    <img class="w-100" src="../assets/r-michelle-tsang-500721-unsplash-min-600x395.jpg" alt="">
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -326,7 +357,8 @@ import SectionDivider from "./SectionDivider.vue";
 import HoverLink from "./HoverLink.vue";
 import CulinaryCollections from "./CulinaryCollections.vue";
 import PostsWidget from "./PostsWidget.vue";
-import TweetsWidget from "./TweetsWidget.vue"
+import TweetsWidget from "./TweetsWidget.vue";
+import EbookSubscribe from "./EbookSubscribe.vue";
 
 export default {
     name: "Main",
@@ -337,6 +369,7 @@ export default {
         CulinaryCollections,
         PostsWidget,
         TweetsWidget,
+        EbookSubscribe,
     },
 
     data() {
@@ -595,5 +628,13 @@ hr {
 .side-post-title {
     height: 50px;
     border: 0.5px solid lightgray;
+}
+
+.load-button {
+    background-color: #EFEFE9;
+    transition: background 0.4s ease-in-out;
+    &:hover {
+        background-color: #d6d6d6;
+    }
 }
 </style>
