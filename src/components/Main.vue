@@ -328,7 +328,7 @@
             <EbookSubscribe />
         </section>
 
-        <section class="pb-5">
+        <section>
             <div class="row p-0 m-0">
                 <div class="col-3 p-0 m-0 position-relative">
                     <HoverLink />
