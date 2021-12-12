@@ -57,8 +57,8 @@
                     </ul>
                 </div>
                 <div class="col-3 px-4">
-                    <h5 class="fw-bold primary pb-5">GET OUR APP!</h5>
-                    <div>
+                    <h5 class="fw-bold primary pb-1">GET OUR APP!</h5>
+                    <div class="py-4">
                         <div
                             class="w-100 pt-2 pb-4"
                             v-for="(store, index) in stores"
