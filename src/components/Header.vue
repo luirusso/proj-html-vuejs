@@ -18,7 +18,7 @@
                 </li>
             </ul>
             <ul class="nav pt-2">
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#"
                         ><i class="fab fa-facebook-f"></i
                     ></a>
@@ -37,6 +37,16 @@
                     <a class="nav-link" href="#"
                         ><i class="fab fa-youtube"></i
                     ></a>
+                </li> -->
+
+                <li
+                    v-for="(social, index) in socials"
+                    :key="`social-${index}`"
+                    class="nav-item"
+                >
+                    <a class="nav-link text-glow" href="#"
+                        ><i :class="social.icon"></i
+                    ></a>
                 </li>
             </ul>
         </div>
@@ -52,10 +62,16 @@
         <div class="container_small">
             <nav>
                 <ul class="d-flex justify-content-center">
-                    <li>
-                        <a href="#">Home</a>
+                    <li
+                        v-for="(link, index) in navLinks"
+                        :key="`link-${index}`"
+                    >
+                        <a href="#">{{ link.link }}</a>
                     </li>
                     <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <!-- <li>
                         <a href="#">Recipes</a>
                     </li>
                     <li>
@@ -70,9 +86,7 @@
                     <li>
                         <a href="#">Contacts</a>
                     </li>
-                    <li>
-                        <a href="#"><i class="fas fa-search"></i></a>
-                    </li>
+                     -->
                 </ul>
             </nav>
         </div>
@@ -82,6 +96,44 @@
 <script>
 export default {
     name: "Header",
+    data() {
+        return {
+            socials: [
+                {
+                    icon: "fab fa-facebook-f",
+                },
+                {
+                    icon: "fab fa-instagram",
+                },
+                {
+                    icon: "fab fa-twitter",
+                },
+                {
+                    icon: "fab fa-youtube",
+                },
+            ],
+            navLinks: [
+                {
+                    link: "Home",
+                },
+                {
+                    link: "Recipes",
+                },
+                {
+                    link: "Places",
+                },
+                {
+                    link: "Blog",
+                },
+                {
+                    link: "About",
+                },
+                {
+                    link: "Contacts",
+                },
+            ],
+        };
+    },
 };
 </script>
 
@@ -113,11 +165,13 @@ export default {
             li {
                 padding-bottom: 5px;
                 border-bottom: 3px solid transparent;
+                transition: all 0.4s ease-in-out;
                 &:hover {
                     border-bottom: 3px solid $primary-color;
                 }
                 a {
                     color: $title-text-color;
+                    transition: all 0.4s ease-in-out;
                     &:hover {
                         color: $primary-color;
                     }

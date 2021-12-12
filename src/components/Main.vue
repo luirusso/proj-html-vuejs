@@ -73,7 +73,7 @@
                             convallis volutpat, arcu tellus facilis nulla, id
                             dignissim orci leo id.
                         </p>
-                        <span class="button_site_square">LEARN MORE</span>
+                        <span class="button_site_square small-border py-2 px-3 fw-bold">LEARN MORE</span>
                     </div>
                 </div>
                 <div class="col-6">
@@ -145,8 +145,8 @@
                     />
                 </div>
                 <div>
-                    <div class="button_site_square">
-                        READ OUR BLOG
+                    <div class="button_site_square small-border py-2 px-3">
+                        <span class="pe-2">READ OUR BLOG</span>
                         <span><i class="fas fa-book-reader"></i></span>
                     </div>
                 </div>
