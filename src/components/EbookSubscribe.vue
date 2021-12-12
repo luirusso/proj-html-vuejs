@@ -47,16 +47,7 @@ export default {
     border-radius: 5px;
 }
 
-.ebook {
-    padding: 13px 50px;
-    border-radius: 5px;
+.form-control {
     border: 2px solid lightgray;
-    &:hover {
-        border: 2px solid rgba(255, 68, 0, 0.322);
-    }
-    &:focus {
-        border: 2px solid $primary-color;
-        box-shadow: none;
-    }
 }
 </style>

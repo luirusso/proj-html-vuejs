@@ -258,11 +258,11 @@
                     <div class="row pb-5">
                         <div class="col-12">
                             <div class="d-flex">
-                                <div class="search_icon">
+                                <div class="search_icon cursor-pointer">
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <input
-                                    class="searchbar w-100"
+                                    class="form-control searchbar w-100"
                                     placeholder="Search..."
                                     type="search"
                                 />
@@ -279,7 +279,7 @@
                             <i
                                 v-for="(social, index) in socialCubesArray"
                                 :key="`social-cube-${index}`"
-                                class="social-icon d-flex align-items-center justify-content-center mx-1 cursor-pointer"
+                                class="social-icon text-glow d-flex align-items-center justify-content-center mx-1 cursor-pointer"
                                 :class="social.icon"
                             >
                             </i>
@@ -592,7 +592,7 @@ hr {
 }
 
 .searchbar {
-    border: none;
+    border-left: 2px solid transparent;
     border-bottom: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2;
     border-top: 1px solid #e2e2e2;
@@ -611,6 +611,7 @@ hr {
     color: #d4d6d7;
     background-color: white;
     border-left: 1px solid #e2e2e2;
+    border-right: 1px solid transparent;
     border-bottom: 1px solid #e2e2e2;
     border-top: 1px solid #e2e2e2;
     border-top-left-radius: 5px;
@@ -618,11 +619,12 @@ hr {
 }
 
 .social-icon {
+    color: $small-text-color;
     background-color: #edede8;
     height: 35px;
     width: 35px;
     border-radius: 5px;
-    border: 0.5px solid grey;
+    border: 0.5px solid rgb(230, 230, 230);
 }
 
 .side-post-title {

@@ -16,6 +16,19 @@ html body {
 a {
     text-decoration: none;
 }
+
+.form-control {
+    padding: 13px 50px;
+    border-radius: 5px;
+    border: none;
+    &:hover {
+        border: 2px solid rgba(255, 68, 0, 0.322);
+    }
+    &:focus {
+        border: 2px solid $primary-color;
+        box-shadow: none;
+    }
+}
 // UTILITES
 .container_small {
     width: 700px;
