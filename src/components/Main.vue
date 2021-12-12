@@ -244,7 +244,8 @@
                             v-for="(recipe, index) in randomRecipesArray"
                             :key="`random-recipe-${index}`"
                         >
-                            <Card class="text-center box-shadow white mb-4"
+                            <Card
+                                class="text-center box-shadow white mb-4"
                                 :card_image="recipe.card_image"
                                 :card_title="recipe.card_title"
                                 :card_author="recipe.card_author"
@@ -254,7 +255,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="row">
+                    <div class="row pb-5">
                         <div class="col-12">
                             <div class="d-flex">
                                 <div class="search_icon">
@@ -266,6 +267,22 @@
                                     type="search"
                                 />
                             </div>
+                        </div>
+                    </div>
+                    <div class="pb-4">
+                        <div class="d-flex fs-5 title-font primary">
+                            Follow Us
+                        </div>
+                    </div>
+                    <div class="social-wrapper">
+                        <div class="d-flex">
+                            <i
+                                v-for="(social, index) in socialCubesArray"
+                                :key="`social-cube-${index}`"
+                                class="social-icon d-flex align-items-center justify-content-center mx-1 cursor-pointer"
+                                :class="social.icon"
+                            >
+                            </i>
                         </div>
                     </div>
                 </div>
@@ -417,6 +434,23 @@ export default {
                     card_date: "March 25th, 2019",
                 },
             ],
+            socialCubesArray: [
+                {
+                    icon: "fab fa-facebook-f",
+                },
+                {
+                    icon: "fab fa-instagram",
+                },
+                {
+                    icon: "fab fa-twitter",
+                },
+                {
+                    icon: "fab fa-youtube",
+                },
+                {
+                    icon: "fab fa-pinterest-p",
+                },
+            ],
         };
     },
 };
@@ -498,5 +532,13 @@ hr {
     border-top: 1px solid #e2e2e2;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.social-icon {
+    background-color: #edede8;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
 }
 </style>
