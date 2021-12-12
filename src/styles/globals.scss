@@ -47,8 +47,12 @@ a {
     }
 }
 
+.round {
+    border-radius: 50%;
+}
+
 .primary {
-    color: #fc7525;
+    color: $primary-color;
 }
 
 .cursor-pointer {
