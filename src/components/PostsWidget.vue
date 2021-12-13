@@ -1,6 +1,6 @@
 <template>
     <div class="pb-4">
-        <div class="col-12 pb-5">
+        <div class="col-12 fs-5 pb-5">
             <div class="row">
                 <div
                     class="col-6 side-post-title text-center title-font white d-flex align-items-center justify-content-center cursor-pointer text-glow"

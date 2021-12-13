@@ -16,7 +16,7 @@
                     <div class="d-flex justify-content-between">
                         <div class="d-flex align-items-center">
                             <img
-                                class="pe-1 cursor-pointer"
+                                class="pe-1 cursor-pointer w-100"
                                 src="../assets/3a74ce3d0532b7773b174c45ca3bd05a_normal.png"
                                 alt=""
                             />
