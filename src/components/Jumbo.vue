@@ -46,7 +46,7 @@ h1 {
 .jumbo-title {
     background: white;
     border-radius: 10px;
-    padding: 3rem 4rem;
+    padding: 2.5rem 4rem;
 }
 
 .today {

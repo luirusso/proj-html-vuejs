@@ -8,7 +8,7 @@
             >
                 <i class="fas fs-6 fa-link"></i>
             </div>
-            <div>{{ linkTitle }}</div>
+            <div class="white-text">{{ linkTitle }}</div>
         </div>
     </div>
 </template>
@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.white-text {
+    color: white;
+}
+
 .hover-link {
     height: 100%;
     width: 100%;
