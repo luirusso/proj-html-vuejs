@@ -129,7 +129,7 @@
                             </div>
                             <div class="button_site_square text-center">
                                 <span>
-                                    <i class="fas fa-globe-americas"></i>
+                                    <i class="fas fa-globe-americas pe-2"></i>
                                     VIEW ALL CITY GUIDES
                                 </span>
                             </div>
@@ -382,6 +382,10 @@ export default {
         justify-content: center;
         font-family: Catamaran, Arial, Helvetica, sans-serif;
     }
+}
+
+.title-font.primary {
+    color: $primary-color;
 }
 
 .searchbar {

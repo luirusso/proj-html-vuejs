@@ -67,6 +67,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/globals.scss";
+
 .date {
     color: $small-text-color;
 }
