@@ -15,7 +15,7 @@
             <div class="d-flex justify-content-center">
                 <div>By<a class="text-glow" href="#"> {{ card_author }}</a></div>
                 <div class="px-1">|</div>
-                <div>{{ card_date }}</div>
+                <div class="small-t-color">{{ card_date }}</div>
             </div>
         </div>
     </div>

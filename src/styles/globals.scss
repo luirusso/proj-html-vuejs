@@ -2,10 +2,9 @@
 
 $primary-color: #fc7525;
 $page-background: #f6f7f1;
-$small-text-color: #6a6b6c;
-$primary-text-color: #6a6b6c;
+$small-text-color: #8D8883;
+$primary-text-color: rgb(103, 97, 90);
 $title-text-color: rgb(51, 51, 56);
-
 // GLOBALS
 
 html body {
@@ -75,6 +74,10 @@ a {
     border-radius: 50%;
 }
 
+.text-primary {
+    color: $primary-text-color;
+}
+
 .primary {
     color: $primary-color;
 }
@@ -93,6 +96,10 @@ a {
 
 .letter-spacing {
     letter-spacing: 2px;
+}
+
+.small-t-color {
+    color: $small-text-color;
 }
 
 .title-font {
