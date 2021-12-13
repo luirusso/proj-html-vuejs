@@ -18,27 +18,6 @@
                 </li>
             </ul>
             <ul class="nav pt-2">
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#"
-                        ><i class="fab fa-facebook-f"></i
-                    ></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"
-                        ><i class="fab fa-instagram"></i
-                    ></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"
-                        ><i class="fab fa-twitter"></i
-                    ></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"
-                        ><i class="fab fa-youtube"></i
-                    ></a>
-                </li> -->
-
                 <li
                     v-for="(social, index) in socials"
                     :key="`social-${index}`"
@@ -71,22 +50,6 @@
                     <li>
                         <a href="#"><i class="fas fa-search"></i></a>
                     </li>
-                    <!-- <li>
-                        <a href="#">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="#">Places</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacts</a>
-                    </li>
-                     -->
                 </ul>
             </nav>
         </div>
