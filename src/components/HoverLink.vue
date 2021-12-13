@@ -29,7 +29,7 @@ export default {
     background: rgb(251, 78, 35);
     background: linear-gradient(
         180deg,
-        rgba(251, 78, 35, 0.7875525210084033) 0%,
+        rgba(251, 78, 35, 0.486) 0%,
         rgba(251, 96, 35, 1) 100%
     );
     color: white;
