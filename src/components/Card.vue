@@ -1,7 +1,9 @@
 <template>
     <div class="width-100">
         <div class="width-100 mb-3 position-relative">
-            <HoverLink />
+            <HoverLink
+            :linkTitle="card_title"
+             />
             <img
                 class="width-100"
                 :src="require(`../assets/${card_image}`)"

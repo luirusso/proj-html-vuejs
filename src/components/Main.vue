@@ -38,78 +38,7 @@
         </div>
 
         <div class="container pb-5">
-            <div class="row justify-content-between">
-                <div
-                    class="col-6 big_card white h-75 width-45 p-0 pb-4 box-shadow"
-                >
-                    <div class="w-100 position-relative">
-                        <HoverLink />
-                        <img
-                            class="w-100"
-                            src="../assets/Yogurt-Nan-600x395.jpg"
-                            alt=""
-                        />
-                    </div>
-                    <div class="px-5 py-4">
-                        <div>
-                            <h4 class="title-font text-glow">
-                                Lunch Favourite with Salad, Naan And Beans
-                            </h4>
-                            <div class="pb-1">
-                                Bakery, Featured, Healthy, Latest Recipes, Staff
-                                Picks
-                            </div>
-                        </div>
-                        <div class="pb-1">
-                            <hr class="w-100 my-3" />
-                        </div>
-                        <p class="pb-3 fs-6">
-                            Suspendisse at semper odio. Nam fringilla
-                            scelerisque tincidunt. Orci varius natoque penatibus
-                            et magnis dis parturient montes, nascetur ridiculus
-                            mus. Donec tincidunt posuere ornare. Phasellus
-                            placerat odio non feugiat sollicitudin. Integer
-                            vitae elementum ex. Sed porttitor, diam eget
-                            convallis volutpat, arcu tellus facilis nulla, id
-                            dignissim orci leo id.
-                        </p>
-                        <span class="button_site_square small-border py-2 px-3 fw-bold">LEARN MORE</span>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div
-                            v-for="(popular, index) in popularFoodArray"
-                            :key="`popular-${index}`"
-                            class="col-6 pb-3 pe-2"
-                        >
-                            <!-- POPULAR FOOD CARDS -->
-                            <div
-                                class="popular-food-card overflow-hidden w-100 box-shadow"
-                            >
-                                <!-- <div class="hover-link">
-                                    <div>
-                                        <i class="fas fa-link"></i>
-                                    </div>
-                                    <div>
-                                        Fruit Platter with Banana, Mango,
-                                        Berries and Orange
-                                    </div>
-                                </div> -->
-                                <div class="position-relative">
-                                    <HoverLink />
-                                    <img
-                                        :src="
-                                            require(`../assets/${popular.popularImage}`)
-                                        "
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <PopularRecipes />
         </div>
 
         <div class="container_divider pt-5 pb-3">
@@ -145,7 +74,7 @@
                     />
                 </div>
                 <div>
-                    <div class="button_site_square small-border py-2 px-3">
+                    <div class="button_site_square small-border py-2 px-4">
                         <span class="pe-2">READ OUR BLOG</span>
                         <span><i class="fas fa-book-reader"></i></span>
                     </div>
@@ -158,7 +87,10 @@
                 <div class="col-7">
                     <div class="big_card white p-0 pb-4 mb-5 box-shadow">
                         <div class="w-100 position-relative">
-                            <HoverLink />
+                            <HoverLink
+                                :linkTitle="`Food Corner: Top Japanese Restaurants for
+                                    Sushi`"
+                            />
                             <img
                                 class="w-100"
                                 src="../assets/single-post-img3-800x527.jpg"
@@ -235,6 +167,7 @@
             </div>
         </div>
 
+        <!-- LIST OF RANDOM RECIPES -->
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-7">
@@ -263,7 +196,7 @@
                                 </div>
                                 <input
                                     class="form-control searchbar w-100"
-                                    placeholder="Search..."
+                                    placeholder=" Search..."
                                     type="search"
                                 />
                             </div>
@@ -275,7 +208,7 @@
                         </div>
                     </div>
                     <div class="social-wrapper pb-5">
-                        <div class="d-flex">
+                        <div class="d-flex pb-3">
                             <i
                                 v-for="(social, index) in socialCubesArray"
                                 :key="`social-cube-${index}`"
@@ -285,39 +218,16 @@
                             </i>
                         </div>
                     </div>
-                    <div class="col-12 pb-5">
-                        <div class="row">
-                            <div
-                                class="col-6 side-post-title text-center title-font white d-flex align-items-center justify-content-center cursor-pointer text-glow"
-                            >
-                                Popular
-                            </div>
-                            <div
-                                class="col-6 side-post-title text-center title-font d-flex align-items-center justify-content-center cursor-pointer text-glow"
-                            >
-                                Recent
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pb-5">
-                        <div
-                            v-for="(post, index) in postsWidgetArray"
-                            :key="`post-${index}`"
-                            class="col-12"
-                        >
-                            <PostsWidget
-                                :image="post.image"
-                                :title="post.title"
-                                :date="post.date"
-                            />
-                        </div>
-                    </div>
+
+                    <PostsWidget />
 
                     <TweetsWidget />
                 </div>
 
                 <div class="col-7 pb-7rem">
-                    <div class="load-button text-center fs-5 fw-bold py-3 box-shadow cursor-pointer">
+                    <div
+                        class="load-button text-center fs-5 fw-bold py-3 box-shadow cursor-pointer"
+                    >
                         LOAD MORE POSTS
                     </div>
                 </div>
@@ -329,24 +239,7 @@
         </section>
 
         <section>
-            <div class="row p-0 m-0">
-                <div class="col-3 p-0 m-0 position-relative">
-                    <HoverLink />
-                    <img class="w-100" src="../assets/Yogurt-Nan-600x395.jpg" alt="">
-                </div>
-                <div class="col-3 p-0 m-0 position-relative">
-                    <HoverLink />
-                    <img class="w-100" src="../assets/Mixed-fruits-600x395.jpg" alt="">
-                </div>
-                <div class="col-3 p-0 m-0 position-relative">
-                    <HoverLink />
-                    <img class="w-100" src="../assets/r-rachel-park-366508-unsplash-min-600x395.jpg" alt="">
-                </div>
-                <div class="col-3 p-0 m-0 position-relative">
-                    <HoverLink />
-                    <img class="w-100" src="../assets/r-michelle-tsang-500721-unsplash-min-600x395.jpg" alt="">
-                </div>
-            </div>
+            <FullWidthRecipes />
         </section>
     </main>
 </template>
@@ -355,10 +248,12 @@
 import Card from "./Card.vue";
 import SectionDivider from "./SectionDivider.vue";
 import HoverLink from "./HoverLink.vue";
+import PopularRecipes from "./PopularRecipes.vue";
 import CulinaryCollections from "./CulinaryCollections.vue";
 import PostsWidget from "./PostsWidget.vue";
 import TweetsWidget from "./TweetsWidget.vue";
 import EbookSubscribe from "./EbookSubscribe.vue";
+import FullWidthRecipes from "./FullWidthRecipes.vue";
 
 export default {
     name: "Main",
@@ -366,10 +261,12 @@ export default {
         Card,
         SectionDivider,
         HoverLink,
+        PopularRecipes,
         CulinaryCollections,
         PostsWidget,
         TweetsWidget,
         EbookSubscribe,
+        FullWidthRecipes,
     },
 
     data() {
@@ -394,36 +291,6 @@ export default {
                     card_title: "Why These Toasts with Tea are My New Favorite",
                     card_author: "By admin",
                     card_date: "March 25th, 2019",
-                },
-            ],
-            popularFoodArray: [
-                {
-                    popularImage: "Mixed-fruits-400x263.jpg",
-                },
-                {
-                    popularImage:
-                        "r-rachel-park-366508-unsplash-min-400x263.jpg",
-                },
-                {
-                    popularImage:
-                        "r-michelle-tsang-500721-unsplash-min-400x263.jpg",
-                },
-                {
-                    popularImage: "quick-summer-drink-460x295.jpg",
-                },
-                {
-                    popularImage:
-                        "r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg",
-                },
-                {
-                    popularImage: "perfect-cosmopolitan-460x295.jpg",
-                },
-                {
-                    popularImage: "fi2x-6-460x295.jpg",
-                },
-                {
-                    popularImage:
-                        "r-brooke-lark-96398-unsplash-min-460x295.jpg",
                 },
             ],
             culinaryCollectionArray: [
@@ -517,23 +384,6 @@ export default {
                     icon: "fab fa-pinterest-p",
                 },
             ],
-            postsWidgetArray: [
-                {
-                    image: "single-post-img3-66x66.jpg",
-                    title: "Food Corner: Top Japanes Restaurants for Sushi",
-                    date: "March 25th, 2019",
-                },
-                {
-                    image: "singapore-featured-image-66x66.jpg",
-                    title: "City Guide: Singapore",
-                    date: "February 27th, 2019",
-                },
-                {
-                    image: "slide1-bg-66x66.jpg",
-                    title: "6 Nutritional Tips to Help Burn Down Body Fat",
-                    date: "February 28th, 2019",
-                },
-            ],
         };
     },
 };
@@ -553,14 +403,6 @@ hr {
     box-shadow: 0px 0px 7px 0px #0000002e, 0px 0px 0px 0px rgb(0 0 0 / 0%);
     padding: 2rem 2rem;
     top: -70px;
-}
-
-.popular-food-card {
-    max-height: 177px;
-    img {
-        object-fit: cover;
-        width: 100%;
-    }
 }
 
 .latest-recipes-banner {
@@ -627,13 +469,8 @@ hr {
     border: 0.5px solid rgb(230, 230, 230);
 }
 
-.side-post-title {
-    height: 50px;
-    border: 0.5px solid lightgray;
-}
-
 .load-button {
-    background-color: #EFEFE9;
+    background-color: #efefe9;
     transition: background 0.4s ease-in-out;
     &:hover {
         background-color: #d6d6d6;

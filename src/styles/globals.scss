@@ -44,12 +44,13 @@ a {
     background-color: $primary-color;
     padding: 5px 10px;
     color: white;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: all 0.4s ease-in-out;
     &:hover {
         cursor: pointer;
         background-color: #c55e22;
         color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 
@@ -62,6 +63,7 @@ a {
         cursor: pointer;
         background-color: #c55e22;
         color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
 

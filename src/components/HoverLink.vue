@@ -1,21 +1,24 @@
 <template>
     <div
-        class="hover-link title-font fs-5 d-flex flex-column align-content-center justify-content-center text-center py-3 px-5"
+        class="hover-link title-font fs-5 d-flex flex-column align-content-center justify-content-center text-center px-5"
     >
-        <div class="d-flex justify-content-center pb-2">
+        <div class="d-flex flex-column align-items-center justify-content-center pb-2">
             <div
-                class="link-icon d-flex align-items-center justify-content-center"
+                class="link-icon d-flex align-items-center justify-content-center mb-2"
             >
                 <i class="fas fs-6 fa-link"></i>
             </div>
+            <div>{{ linkTitle }}</div>
         </div>
-        <div>Fruit Platter with Banana, Mango, Berries and Orange</div>
     </div>
 </template>
 
 <script>
 export default {
     name: "HoverLink",
+    props: {
+        linkTitle: String,
+    },
 };
 </script>
 
