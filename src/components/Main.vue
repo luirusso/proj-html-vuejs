@@ -1,5 +1,5 @@
 <template>
-    <main class="position-relative">
+    <main>
 
         <ScrollWidget />
 
