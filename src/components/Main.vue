@@ -1,8 +1,5 @@
 <template>
     <main>
-
-        <ScrollWidget />
-
         <FoodieJournal />
 
         <div class="container_divider pb-4">
@@ -58,6 +55,7 @@
             </div>
         </div>
 
+        <!-- FOOD CORNER SECTION -->
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-7">
@@ -109,6 +107,7 @@
                 </div>
 
                 <div class="col-4">
+                    <!-- BIG SIDE CARD LATEST RECIPES -->
                     <div
                         class="latest-recipes-banner d-flex align-items-center justify-content-center mb-5 cursor-pointer"
                     >
@@ -119,6 +118,7 @@
                         </div>
                     </div>
                     <div class="row">
+                        <!-- SINGAPORE CITY GUIDE -->
                         <div class="col-12">
                             <div class="singapore-guide cursor-pointer">
                                 <div>
@@ -134,7 +134,6 @@
                                 </span>
                             </div>
                         </div>
-
                         <div class="py-4">
                             <hr class="w-100" />
                         </div>
@@ -143,11 +142,11 @@
             </div>
         </div>
 
-        <!-- LIST OF RANDOM RECIPES -->
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-7">
                     <div class="row">
+                        <!-- LIST OF RANDOM RECIPES -->
                         <div
                             class="col-6 my-2 px-3"
                             v-for="(recipe, index) in randomRecipesArray"
@@ -164,6 +163,7 @@
                     </div>
                 </div>
                 <div class="col-4">
+                    <!-- SEARCH SIDEBAR -->
                     <div class="row pb-5">
                         <div class="col-12">
                             <div class="d-flex">
@@ -178,6 +178,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- FOLLOW US SECTION WITH SOCIAL ICONS -->
                     <div class="pb-4">
                         <div class="d-flex fs-5 title-font primary">
                             Follow Us
@@ -200,6 +201,7 @@
                     <TweetsWidget />
                 </div>
 
+                <!-- LOAD MORE BUTTON -->
                 <div class="col-7 pb-7rem">
                     <div
                         class="load-button text-center fs-5 fw-bold py-3 box-shadow cursor-pointer"
@@ -221,7 +223,6 @@
 </template>
 
 <script>
-import ScrollWidget from "./ScrollWidget.vue";
 import FoodieJournal from "./FoodieJournal.vue";
 import Card from "./Card.vue";
 import SectionDivider from "./SectionDivider.vue";
@@ -236,7 +237,6 @@ import FullWidthRecipes from "./FullWidthRecipes.vue";
 export default {
     name: "Main",
     components: {
-        ScrollWidget,
         FoodieJournal,
         Card,
         SectionDivider,

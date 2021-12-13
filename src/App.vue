@@ -2,7 +2,7 @@
     <div id="app">
         <FixedIcons />
 
-        <!-- <ScrollWidget /> -->
+        <ScrollWidget />
 
         <Header id="header"/>
 
@@ -18,7 +18,7 @@
 
 <script>
 import FixedIcons from "./components/FixedIcons.vue";
-// import ScrollWidget from "./components/ScrollWidget.vue"
+import ScrollWidget from "./components/ScrollWidget.vue";
 import Header from "./components/Header.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
@@ -28,7 +28,7 @@ import Copyright from "./components/Copyright.vue";
 export default {
     name: "App",
     components: {
-        // ScrollWidget,
+        ScrollWidget,
         FixedIcons,
         Header,
         Main,
