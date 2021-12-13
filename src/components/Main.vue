@@ -1,5 +1,8 @@
 <template>
-    <main>
+    <main class="position-relative">
+
+        <ScrollWidget />
+
         <div class="container white pb-4 position-relative">
             <div
                 class="d-flex pb-4 justify-content-space-between align-items-center"
@@ -196,7 +199,7 @@
                                 </div>
                                 <input
                                     class="form-control searchbar w-100"
-                                    placeholder=" Search..."
+                                    placeholder="Search..."
                                     type="search"
                                 />
                             </div>
@@ -245,6 +248,7 @@
 </template>
 
 <script>
+import ScrollWidget from "./ScrollWidget.vue"
 import Card from "./Card.vue";
 import SectionDivider from "./SectionDivider.vue";
 import HoverLink from "./HoverLink.vue";
@@ -258,6 +262,7 @@ import FullWidthRecipes from "./FullWidthRecipes.vue";
 export default {
     name: "Main",
     components: {
+        ScrollWidget,
         Card,
         SectionDivider,
         HoverLink,
@@ -276,20 +281,20 @@ export default {
                     card_image: "single-post-img3-400x263.jpg",
                     card_title:
                         "Food Corner: Top Japanese Restaurants for Sushi",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-roundup-400x263.jpg",
                     card_title:
                         "Roundup: My New Favourite Recipes For Healthy Living",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-toasts-400x263.jpg",
                     card_title: "Why These Toasts with Tea are My New Favorite",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
             ],
@@ -332,38 +337,38 @@ export default {
                     card_image: "fi-roundup-400x263.jpg",
                     card_title:
                         "Roundup: My New Favourite Recipes For Healty Living",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-korean-food-400x263.jpg",
                     card_title: "Meal Prep: Korean Bibimbap with Kimchi",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-toasts-400x263.jpg",
                     card_title: "Why These Toasts with Tea are My New Favorite",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-street-food-400x263.jpg",
                     card_title: "Exploring Street Food in Bangkok",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-organic-breakfast-400x263.jpg",
                     card_title: "Organic Choices For Healthier Living",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
                 {
                     card_image: "fi-water-side-rest-400x263.jpg",
                     card_title:
                         "5 Waterside Restaurants in Istanbul for Special Events",
-                    card_author: "By admin",
+                    card_author: "admin",
                     card_date: "March 25th, 2019",
                 },
             ],

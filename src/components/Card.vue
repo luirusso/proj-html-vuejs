@@ -13,7 +13,7 @@
         <div class="px-4 pb-4">
             <div class="title-font text-glow fs-4 pb-1">{{ card_title }}</div>
             <div class="d-flex justify-content-center">
-                <div>{{ card_author }}</div>
+                <div>By<a class="text-glow" href="#"> {{ card_author }}</a></div>
                 <div class="px-1">|</div>
                 <div>{{ card_date }}</div>
             </div>
@@ -38,4 +38,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+a {
+    color: unset;
+}
+</style>
