@@ -13,7 +13,7 @@
                         </span>
                     </div>
                     <div class="title-font pb-1 text-glow">
-                        Food Corner: Top Japanese Restaurants for Sushi
+                        <h1>Food Corner: Top Japanese Restaurants for Sushi</h1>
                     </div>
                     <div class="fs-5 title-font date">March 25, 2019</div>
                 </div>
@@ -30,6 +30,10 @@ export default {
 
 <style scoped lang="scss">
 @import "../styles/globals.scss";
+
+h1 {
+    font-size: 45px;
+}
 
 .jumbotron {
     height: 700px;

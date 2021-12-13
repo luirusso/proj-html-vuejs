@@ -204,7 +204,7 @@
                 <!-- LOAD MORE BUTTON -->
                 <div class="col-7 pb-7rem">
                     <div
-                        class="load-button text-center fs-5 fw-bold py-3 box-shadow cursor-pointer"
+                        class="load-button text-center letter-spacing fs-6 fw-bold py-3 box-shadow cursor-pointer"
                     >
                         LOAD MORE POSTS
                     </div>

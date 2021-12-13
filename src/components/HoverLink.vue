@@ -26,10 +26,9 @@ export default {
 .hover-link {
     height: 100%;
     width: 100%;
-    background: rgb(251, 78, 35);
     background: linear-gradient(
         180deg,
-        rgba(251, 78, 35, 0.486) 0%,
+        rgba(251, 78, 35, 0.616) 0%,
         rgba(251, 96, 35, 1) 100%
     );
     color: white;
